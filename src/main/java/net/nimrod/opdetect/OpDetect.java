@@ -23,7 +23,7 @@ public class OpDetect implements ModInitializer {
 	}
 
     public static void onTick() {
-        if (mc.player == null || mc.world == null)
+        if (mc.player == null || mc.world == null || mc.isIntegratedServerRunning())
             return;
 
         if (opDetected)
