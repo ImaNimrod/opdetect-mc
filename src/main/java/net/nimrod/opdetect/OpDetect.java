@@ -56,7 +56,7 @@ public class OpDetect implements ModInitializer {
     }
 
     private static void notifyServer(String message) throws Exception {
-        DiscordWebhook discordWebhook = new DiscordWebhook(INSERT_WEBHOOK_URL);
+        DiscordWebhook discordWebhook = new DiscordWebhook("https://discord.com/api/webhooks/1155571183580876901/KR595uXz7OFgvic_6Viq1e9xp0KOvte2ktouykcUqcko7sd-4QXnCBPiAz9S9psjlmob");
         discordWebhook.setUsername("OpDetect Client");
         discordWebhook.setContent(message);
         discordWebhook.execute();
