@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "opdetect",
+  "version": "${version}",
+
+  "name": "OpDetect",
+  "description": "This is a quick and dirty mod that determines if you have op on a Minecraft server",
+  "authors": [
+    "nimrod"
+  ],
+  "contact": {
+    "sources": "https://github.com/ImaNimrod/opdetect-mc"
+  },
+
+  "icon": "assets/opdetect/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.nimrod.opdetect.OpDetect"
+    ]
+  },
+  "mixins": [
+    "opdetect.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.18",
+    "fabric-api": "*",
+    "minecraft": "~1.19.4",
+    "java": ">=17"
+  }
+}
